@@ -23,7 +23,7 @@ namespace btm
             SqlDataReader r = gm.ExecuteReader();
             if (r.Read())
             {
-                Session["user"] = r.GetString(1);
+                Session["user"] = r.GetString(0);
                 r.Close();
                 SqlCommand gm2 = new SqlCommand("UPDATE Users SET Verified='True' Where email=@e",con);
                 gm2.Parameters.Add(new SqlParameter("@e", SqlDbType.VarChar)).Value = email;

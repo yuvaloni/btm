@@ -41,10 +41,10 @@ namespace btm
                 SqlDataReader reader = com.ExecuteReader();
                 while(reader.Read())
                 {
-                    if (TextBox1.Text == reader.GetString(1))
+                    if (TextBox1.Text == reader.GetString(0))
                         isvalid = false;
                     Response.Write("<br/><Font color='red'/>username already taken</font>");
-                    if (TextBox5.Text == reader.GetString(5))
+                    if (TextBox5.Text == reader.GetString(4))
                         isvalid = false;
                     Response.Write("<br/><Font color='red'/>email already in use</font>");
                 }
