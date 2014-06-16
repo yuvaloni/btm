@@ -19,7 +19,7 @@ namespace btm
             SqlConnection con = new SqlConnection("Data Source=2c1bdc2a-8612-479f-9158-a34b00cb2e44.sqlserver.sequelizer.com;Persist Security Info=True;User ID=uwoaeqzrkstypppn;Password=2d5wMzX4JxPTgagCtLtMRxjmUyz5pSR23jihFDYwcLxT7mHxKsM8r7VC3SKo83MZ");
             con.Open();
             SqlCommand gm = new SqlCommand("Select * from Users Where email=@e",con);
-            gm.Parameters.Add(new SqlParameter("@e", SqlDbType.VarChar).Value = email);
+            gm.Parameters.Add(new SqlParameter("@e", SqlDbType.VarChar)).Value = email;
             SqlDataReader r = gm.ExecuteReader();
             if (r.Read())
             {
