@@ -24,10 +24,9 @@ namespace btm
             if (r.Read())
             {
                 Session["user"] = r.GetString(1);
-                gm = new SqlCommand("UPDATE TABLE Users SET Verified='True' Where email=@e",con);
-                gm.Parameters.Add(new SqlParameter("@e", SqlDbType.VarChar)).Value = email;
-                gm.ExecuteNonQuery();
-                con.Close();
+                SqlCommand gm2 = new SqlCommand("UPDATE TABLE Users SET Verified='True' Where email=@e",con);
+                gm2.Parameters.Add(new SqlParameter("@e", SqlDbType.VarChar)).Value = email;
+                gm2.ExecuteNonQuery();
                 
             }
             else
