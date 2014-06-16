@@ -101,9 +101,7 @@
     <Content Include="signup.aspx" />
     <Content Include="SignUpConfirm.aspx" />
     <Content Include="SongItem.ascx" />
-    <Content Include="Songs\HtmlPage1.html" />
     <Content Include="UpdatePicture.aspx" />
-    <Content Include="Users\HtmlPage1.html" />
     <Content Include="Verify.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
