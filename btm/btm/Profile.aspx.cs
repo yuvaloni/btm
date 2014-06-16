@@ -28,7 +28,7 @@ namespace btm
             }
             r.Close();
             com = new SqlCommand("SELECT * FROM " + Request.QueryString["user"] + " WHERE created='NO'", con);
-             r = com.ExecuteReader();
+            r = com.ExecuteReader();
             for (int i = 0; r.Read(); i++)
             {
                 SongItem song = new SongItem(r.GetString(1));
