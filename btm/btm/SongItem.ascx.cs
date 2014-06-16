@@ -19,6 +19,11 @@ namespace btm
             Button1.Text = name;
             
         }
+        public SongItem()
+        {
+            Button1.Text = name;
+
+        }
         
         protected void Page_Load(object sender, EventArgs e)
         {
