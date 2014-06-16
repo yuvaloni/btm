@@ -37,7 +37,7 @@ namespace btm
             }
             r.Close();
             com = new SqlCommand("SELECT * FROM Users Where username=@u", con);
-            com.Parameters.Add(new SqlParameter("@u", SqlDbType.VarChar).Value = Request.QueryString["user"]);
+            com.Parameters.Add(new SqlParameter("@u", SqlDbType.VarChar)).Value = Request.QueryString["user"];
             r = com.ExecuteReader();
             if (r.Read())
                 Label1.Text = r.GetString(3);

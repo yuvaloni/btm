@@ -52,11 +52,11 @@ namespace btm
                 if(isvalid)
                 {
                     com = new SqlCommand("INSERT INTO Users(username ,passwd , fullname ,instruments , email,verified) VALUES(@un,@p,@fn,@i,@e,'false')",con);
-                    com.Parameters.Add(new SqlParameter("@un", System.Data.SqlDbType.VarChar).Value = TextBox1.Text);
-                    com.Parameters.Add(new SqlParameter("@p", System.Data.SqlDbType.VarChar).Value = TextBox2.Text);
-                    com.Parameters.Add(new SqlParameter("@fn", System.Data.SqlDbType.VarChar).Value = TextBox4.Text);
-                    com.Parameters.Add(new SqlParameter("@e", System.Data.SqlDbType.VarChar).Value = TextBox5.Text);
-                    com.Parameters.Add(new SqlParameter("@i", System.Data.SqlDbType.VarChar).Value = TextBox6.Text);
+                    com.Parameters.Add(new SqlParameter("@un", System.Data.SqlDbType.VarChar)).Value = TextBox1.Text;
+                    com.Parameters.Add(new SqlParameter("@p", System.Data.SqlDbType.VarChar)).Value = TextBox2.Text;
+                    com.Parameters.Add(new SqlParameter("@fn", System.Data.SqlDbType.VarChar)).Value = TextBox4.Text;
+                    com.Parameters.Add(new SqlParameter("@e", System.Data.SqlDbType.VarChar)).Value = TextBox5.Text;
+                    com.Parameters.Add(new SqlParameter("@i", System.Data.SqlDbType.VarChar)).Value = TextBox6.Text;
                     com.ExecuteNonQuery();
                     com = new SqlCommand("Create Table " + TextBox1.Text + "(song varchar, created varchar)", con);
                     com.ExecuteNonQuery();
