@@ -17,6 +17,8 @@ namespace btm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!Directory.Exists(Path.Combine(Server.MapPath("~"), "Users")))
+                Directory.CreateDirectory(Path.Combine(Server.MapPath("~"), "Users"));
             if (Session["user"] == null)
                 Response.Redirect("http://btm.apphb.com/login.aspx?ref=UpdatePicture");
         }
