@@ -24,6 +24,7 @@ namespace btm
             if (r.Read())
             {
                 Session["user"] = r.GetString(1);
+                r.Close();
                 SqlCommand gm2 = new SqlCommand("UPDATE TABLE Users SET Verified='True' Where email=@e",con);
                 gm2.Parameters.Add(new SqlParameter("@e", SqlDbType.VarChar)).Value = email;
                 gm2.ExecuteNonQuery();
@@ -33,7 +34,8 @@ namespace btm
             {
                 
             }
-            r.Close();
+            if(!r.IsClosed)
+                r.Close();
             con.Close();
         }
 
