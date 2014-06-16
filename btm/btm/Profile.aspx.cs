@@ -40,7 +40,10 @@ namespace btm
             com.Parameters.Add(new SqlParameter("@u", SqlDbType.VarChar)).Value = Request.QueryString["user"];
             r = com.ExecuteReader();
             if (r.Read())
-                Label1.Text = r.GetString(3);
+            {
+                Label1.Text = r.GetString(2);
+                Label3.Text = r.GetString(2);
+            }
             r.Close();
             con.Close();
  
