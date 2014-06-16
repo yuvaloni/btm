@@ -35,6 +35,7 @@ namespace btm
                 
             }
             r.Close();
+            con.Close();
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
