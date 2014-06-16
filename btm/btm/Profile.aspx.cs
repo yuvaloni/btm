@@ -42,7 +42,7 @@ namespace btm
             if (r.Read())
             {
                 Label1.Text = r.GetString(2);
-                Label3.Text = r.GetString(2);
+                Label3.Text = r.GetString(3);
             }
             r.Close();
             con.Close();
