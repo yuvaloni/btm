@@ -51,7 +51,7 @@ namespace btm
                 reader.Close();
                 if(isvalid)
                 {
-                    com = new SqlCommand("INSERT INTO Users(username ,passwd , fullname ,instruments , email,verified) VALUES(@un,@p,@fn,@i,@e,'false')",con);
+                    com = new SqlCommand("INSERT INTO Users(username ,psswd , fullname ,instruments , email,verified) VALUES(@un,@p,@fn,@i,@e,'false')",con);
                     com.Parameters.Add(new SqlParameter("@un", System.Data.SqlDbType.VarChar)).Value = TextBox1.Text;
                     com.Parameters.Add(new SqlParameter("@p", System.Data.SqlDbType.VarChar)).Value = TextBox2.Text;
                     com.Parameters.Add(new SqlParameter("@fn", System.Data.SqlDbType.VarChar)).Value = TextBox4.Text;
