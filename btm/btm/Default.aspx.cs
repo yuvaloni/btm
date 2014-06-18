@@ -61,7 +61,7 @@ namespace btm
         {
             SqlConnection con = new SqlConnection("Data Source=2c1bdc2a-8612-479f-9158-a34b00cb2e44.sqlserver.sequelizer.com;Persist Security Info=True;User ID=uwoaeqzrkstypppn;Password=2d5wMzX4JxPTgagCtLtMRxjmUyz5pSR23jihFDYwcLxT7mHxKsM8r7VC3SKo83MZ");
             con.Open();
-            SqlCommand com5 = new SqlCommand("SELECT * FROM Users WHERE username = @un AND psswd=@p AND Verified True", con);
+            SqlCommand com5 = new SqlCommand("SELECT * FROM Users WHERE username = @un AND psswd=@p AND Verified=True", con);
             com5.Parameters.Add(new SqlParameter("@un", SqlDbType.VarChar)).Value = TextBox2.Text;
             com5.Parameters.Add(new SqlParameter("@p", SqlDbType.VarChar)).Value = TextBox3.Text;
             SqlDataReader R5 = com5.ExecuteReader();
