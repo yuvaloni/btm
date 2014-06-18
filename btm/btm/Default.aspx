@@ -53,7 +53,7 @@
           <font color="white">username:</font>  <asp:TextBox ID="TextBox2" runat="server" Height="20%" Width="50%" ></asp:TextBox>
              <br />
              <br />
-             <font color="white">password:</font><asp:TextBox ID="TextBox3" runat="server" Height="20%" Width="50%" " TextMode="Password"></asp:TextBox>
+             <font color="white">password:</font><asp:TextBox ID="TextBox3" runat="server" Height="20%" Width="50%" TextMode="Password"></asp:TextBox>
             </div>
              <asp:ImageButton ID="doLogin" runat="server" Style="position:absolute;top:47%;left:34%;width:10%;height:3%;" OnClick="doLogin_Click" />
              <asp:ImageButton ID="doRegister" runat="server" Style="position:absolute;top:47%;left:54%;width:10%;height:3%;" OnClick="doRegister_Click" />
