@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="btm.signup" %>
+﻿
+ge="C#" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="btm.signup" %>
 
 <!DOCTYPE html>
 

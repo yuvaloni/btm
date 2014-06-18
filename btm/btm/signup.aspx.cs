@@ -58,7 +58,7 @@ namespace btm
                     com.Parameters.Add(new SqlParameter("@e", System.Data.SqlDbType.VarChar)).Value = TextBox5.Text;
                     com.Parameters.Add(new SqlParameter("@i", System.Data.SqlDbType.VarChar)).Value = TextBox6.Text;
                     com.ExecuteNonQuery();
-                    com = new SqlCommand("Create Table " + TextBox1.Text + "(song varchar, created varchar)", con);
+                    com = new SqlCommand("Create Table " + TextBox1.Text + "(id varchar(255),name varchar(255), created varchar(255))", con);
                     com.ExecuteNonQuery();
                     using(SmtpClient S = new SmtpClient())
                     {

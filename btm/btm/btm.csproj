@@ -70,6 +70,11 @@
     <Reference Include="System.Reactive.PlatformServices">
       <HintPath>..\packages\Rx-PlatformServices.2.1.30214.0\lib\Net45\System.Reactive.PlatformServices.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.DurableInstancing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -96,22 +101,32 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Login.aspx" />
+    <Content Include="CreateSong.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="loginbg.png" />
     <Content Include="Profile.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="SignUpConfirm.aspx" />
     <Content Include="SongItem.ascx" />
+    <Content Include="SongStudio.aspx" />
     <Content Include="UpdatePicture.aspx" />
     <Content Include="Verify.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="CreateSong.aspx.cs">
+      <DependentUpon>CreateSong.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="CreateSong.aspx.designer.cs">
+      <DependentUpon>CreateSong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
@@ -141,6 +156,13 @@
     </Compile>
     <Compile Include="SongItem.ascx.designer.cs">
       <DependentUpon>SongItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SongStudio.aspx.cs">
+      <DependentUpon>SongStudio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SongStudio.aspx.designer.cs">
+      <DependentUpon>SongStudio.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdatePicture.aspx.cs">
       <DependentUpon>UpdatePicture.aspx</DependentUpon>

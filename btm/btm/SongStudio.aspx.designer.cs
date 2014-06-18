@@ -11,7 +11,7 @@ namespace btm
 {
 
 
-    public partial class Login
+    public partial class SongStudio
     {
 
         /// <summary>
