@@ -1,5 +1,5 @@
 ﻿
-ge="C#" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="btm.signup" %>
+<language="C#" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="btm.signup" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,14 @@ ge="C#" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="btm.signup"
 </head>
 <body>
     <form id="form1" runat="server">
-         user name;<%@ Register TagPrefix="recaptcha" Namespace="Recaptcha" Assembly="Recaptcha" %><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+         user name;<%@ Register TagPrefix="recaptcha" Namespace="Recaptcha" Assembly="Recaptcha" %>
+        <script runat="server">
+
+            Protected Sub ImageButton1_Click(sender As Object, e As ImageClickEventArgs)
+
+            End Sub
+</script>
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
          <br />
          password:<asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
          <br />
