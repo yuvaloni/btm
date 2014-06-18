@@ -18,7 +18,7 @@ namespace btm
             
         }
         
-        protected void ImageButton1_Click(object sender, EventArgs e)
+        public void ImageButton1_Click(object sender, EventArgs e)
         {
             if(!Page.IsValid)
             {
